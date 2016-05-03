@@ -7,11 +7,14 @@ import pageObjects.*;
 import utility.ExcelUtils;
 import utility.Constant;
 import appModules.SignIn_Action;
+import org.apache.log4j.Logger;
 
 /**
  * Created by Marinko on 2016-05-03.
  */
 public class Apache_POI_TC {
+
+    final static Logger logger = Logger.getLogger(Apache_POI_TC.class);
 
     private static WebDriver driver = null;
 
@@ -29,7 +32,8 @@ public class Apache_POI_TC {
 
         SignIn_Action.Execute(driver);
 
-        System.out.println("Login Successfully, now it is the time to Log Off buddy.");
+        logger.info("Login Successfully, now it is the time to Log Off buddy.");
+        //System.out.println("Login Successfully, now it is the time to Log Off buddy.");
 
         HomePage.lnk_LogOut(driver).click();
 
