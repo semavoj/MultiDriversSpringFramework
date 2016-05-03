@@ -1,6 +1,5 @@
 package automationFramework;
 
-import java.io.File;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -19,7 +18,6 @@ public class Apache_POI_TC {
     public static void main(String[] args) throws Exception {
 
         //This is to open the Excel file. Excel path, file name and the sheet name are parameters to this method
-
 
         ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,"Blad1");
 
