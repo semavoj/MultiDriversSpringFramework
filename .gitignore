@@ -1,2 +1,5 @@
 workspace.xml
 *.iml
+.idea/libraries*
+.idea/uiDesigner.xml
+out
