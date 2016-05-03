@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import pageObjects.HomePage;
 import appModules.SignIn_Action;
+import org.apache.log4j.Logger;
 
 // Import package utility.*
 
@@ -13,6 +14,8 @@ import utility.Constant;
  * Created by Marinko on 2016-05-02.
  */
 public class Global_Var_TC {
+
+    final static Logger logger = Logger.getLogger(Global_Var_TC.class);
 
     private static WebDriver driver = null;
 
@@ -30,7 +33,8 @@ public class Global_Var_TC {
 
         SignIn_Action.Execute(driver,Constant.Username,Constant.Password);
 
-        System.out.println("Login Successfully, now it is the time to Log Off buddy.");
+        logger.info("Login Successfully, now it is the time to Log Off buddy.");
+        //System.out.println("Login Successfully, now it is the time to Log Off buddy.");
 
         HomePage.lnk_LogOut(driver).click();
 
