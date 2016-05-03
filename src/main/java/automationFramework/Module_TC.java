@@ -22,8 +22,13 @@ public class Module_TC {
 
         // Use page Object library now
 
-        SignIn_Action.Execute(driver);
+        try {
+            SignIn_Action.Execute(driver);
 
+        } catch (Exception e)
+        {
+            System.out.println("Sign_In_error");
+        }
         System.out.println(" Login Successfully, now it is the time to Log Off buddy.");
 
         HomePage.lnk_LogOut(driver).click();

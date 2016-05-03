@@ -11,7 +11,7 @@ public class Constant {
 
     public static final String Password = "Test@123";
 
-    public static final String Path_TestData = "..//testData//";
+    public static final String Path_TestData = "C://Users//Marinko//IdeaProjects//GitTest//src//main//java//testData//";
 
     public static final String File_TestData = "TestData.xlsx";
 }
