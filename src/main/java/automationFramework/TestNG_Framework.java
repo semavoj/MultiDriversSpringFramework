@@ -20,6 +20,7 @@ public class TestNG_Framework {
 
     public WebDriver driver;
 
+    @BeforeMethod
 
     public void beforeMethod() throws Exception {
 
@@ -27,7 +28,7 @@ public class TestNG_Framework {
 
         Log.startTestCase("Selenium_Test_001");
 
-        ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,"Sheet1");
+        //ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,"Sheet1");
 
         Log.info(" Excel sheet opened");
 
@@ -47,7 +48,7 @@ public class TestNG_Framework {
 
     public void main() throws Exception {
 
-        SignIn_Action.Execute(driver);
+        SignIn_Action.Execute(driver, Constant.Username, Constant.Password);
 
         System.out.println("Login Successfully, now it is the time to Log Off buddy.");
 
