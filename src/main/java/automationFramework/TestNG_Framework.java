@@ -1,17 +1,17 @@
 package automationFramework;
 
+import appModules.SignIn_Action;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import pageObjects.HomePage;
-import appModules.SignIn_Action;
 import utility.Constant;
 import utility.ExcelUtils;
 import utility.Log;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Marinko on 2016-05-03.
@@ -28,7 +28,8 @@ public class TestNG_Framework {
 
         Log.startTestCase("Selenium_Test_001");
 
-        //ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,"Sheet1");
+        String path = Constant.Path_TestData;
+        ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,"Blad1");
 
         Log.info(" Excel sheet opened");
 
