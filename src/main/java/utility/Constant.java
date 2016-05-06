@@ -11,7 +11,7 @@ public class Constant {
 
     public static final String Password = "MEk2Fip#Fpoh6h#g";
 
-    public static final String Path_TestData = "C:\\Users\\Marinko\\IdeaProjects\\GitTest\\src\\main\\resources\\";
+    public static final String Path_TestData = "C:\\Users\\Marinko\\IdeaProjects\\AutomationFrameworkLab\\src\\main\\resources\\";
 
     public static final String File_TestData = "TestData.xlsx";
 
@@ -47,6 +47,6 @@ public class Constant {
 
     public static final int Col_Result = 13;
 
-    public static final String Path_ScreenShot = "C:\\Users\\Marinko\\IdeaProjects\\GitTest\\Screenshots";
+    public static final String Path_ScreenShot = "C:\\Users\\Marinko\\IdeaProjects\\AutomationFrameworkLab\\Screenshots";
 
 }
