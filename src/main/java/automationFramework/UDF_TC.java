@@ -59,7 +59,7 @@ public class UDF_TC{
     @AfterMethod
 
     public void afterMethod() {
-        
+
         driver.quit();
 
     }
