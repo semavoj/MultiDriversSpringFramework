@@ -3,7 +3,7 @@ package automationFramework;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import pageObjects.HomePage;
+import pageObjects.Home_Page;
 import appModules.SignIn_Action;
 import org.apache.log4j.Logger;
 
@@ -36,7 +36,7 @@ public class Global_Var_TC {
         logger.info("Login Successfully, now it is the time to Log Off buddy.");
         //System.out.println("Login Successfully, now it is the time to Log Off buddy.");
 
-        HomePage.lnk_LogOut(driver).click();
+        Home_Page.lnk_LogOut(driver).click();
 
         driver.quit();
 

@@ -1,6 +1,5 @@
 package automationFramework;
 
-import org.apache.log4j.xml.DOMConfigurator;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -43,7 +42,7 @@ public class Log4j_Logging_TC {
 
         System.out.println("Login Successfully, now it is the time to Log Off buddy.");
 
-        HomePage.lnk_LogOut(driver).click();
+        Home_Page.lnk_LogOut(driver).click();
 
         Log.info("Click action is perfomred on Log Out link");
 

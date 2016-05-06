@@ -35,7 +35,7 @@ public class Apache_POI_TC {
         logger.info("Login Successfully, now it is the time to Log Off buddy.");
         //System.out.println("Login Successfully, now it is the time to Log Off buddy.");
 
-        HomePage.lnk_LogOut(driver).click();
+        Home_Page.lnk_LogOut(driver).click();
 
         driver.quit();
 

@@ -8,7 +8,7 @@ import utility.Log;
 /**
  * Created by Marinko on 2016-05-02.
  */
-public class HomePage {
+public class Home_Page {
     public static WebElement element = null;
 
     public static WebElement lnk_SignIn(WebDriver driver){

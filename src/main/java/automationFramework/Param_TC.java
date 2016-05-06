@@ -3,7 +3,7 @@ package automationFramework;
 import appModules.SignIn_Action;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import pageObjects.HomePage;
+import pageObjects.Home_Page;
 
 import java.util.concurrent.TimeUnit;
 
@@ -27,7 +27,7 @@ public class Param_TC {
 
         System.out.println(" Login Successfully, now it is the time to Log Off buddy.");
 
-        HomePage.lnk_LogOut(driver).click();
+        Home_Page.lnk_LogOut(driver).click();
 
         driver.quit();
     }

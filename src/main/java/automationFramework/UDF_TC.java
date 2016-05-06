@@ -2,17 +2,14 @@ package automationFramework;
 
 import appModules.SignIn_Action;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pageObjects.HomePage;
+import pageObjects.Home_Page;
 import utility.Constant;
 import utility.ExcelUtils;
 import utility.Log;
 import utility.Utils;
-
-import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Marinko on 2016-05-03.
@@ -50,7 +47,7 @@ public class UDF_TC{
 
         System.out.println("Login Successfully, now it is the time to Log Off buddy.");
 
-        HomePage.lnk_LogOut(driver).click();
+        Home_Page.lnk_LogOut(driver).click();
 
         Log.info("Click action is perfomred on Log Out link");
 

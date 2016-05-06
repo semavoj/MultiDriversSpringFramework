@@ -1,7 +1,7 @@
 package appModules;
 
 import org.openqa.selenium.WebDriver;
-import pageObjects.HomePage;
+import pageObjects.Home_Page;
 import pageObjects.LogIn_Page;
 import utility.ExcelUtils;
 import utility.Log;
@@ -13,7 +13,7 @@ public class SignIn_Action {
 
     public static void Execute(WebDriver driver, String sUsername, String sPassword){
 
-        HomePage.lnk_SignIn(driver).click();
+        Home_Page.lnk_SignIn(driver).click();
 
         LogIn_Page.txtbx_UserName(driver).sendKeys(sUsername);
 
@@ -32,7 +32,7 @@ public class SignIn_Action {
 
         Log.info("Password picked from Excel is" + sPassWord);
 
-        HomePage.lnk_MyAccount(driver).click();
+        Home_Page.lnk_MyAccount(driver).click();
 
         Log.info("Click action performed on My Account link");
 
