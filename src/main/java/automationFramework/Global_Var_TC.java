@@ -34,7 +34,7 @@ public class Global_Var_TC {
         // Pass Constant Variables as arguments to Execute method
 
         try {
-            SignIn_Action.Execute(driver, Constant.Username, Constant.Password);
+            SignIn_Action.Execute(Constant.Username, Constant.Password);
         } catch (Exception e){
             Log.error("");
         }
@@ -42,7 +42,7 @@ public class Global_Var_TC {
         //System.out.println("Login Successfully, now it is the time to Log Off buddy.");
 
         try {
-            Home_Page.lnk_LogOut(driver).click();
+            Home_Page.lnk_LogOut().click();
         } catch (Exception e){
             Log.error("");
         }

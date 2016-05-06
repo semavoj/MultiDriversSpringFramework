@@ -44,13 +44,13 @@ public class UDF_TC{
 
     public void main() throws Exception {
 
-        SignIn_Action.Execute(driver, Constant.Username, Constant.Password);
+        SignIn_Action.Execute(Constant.Username, Constant.Password);
 
         System.out.println("Login Successfully, now it is the time to Log Off buddy.");
 
         //ProductListing_Page.Product_1.img_Product(driver).click();
 
-        Home_Page.lnk_LogOut(driver).click();
+        Home_Page.lnk_LogOut().click();
 
         Log.info("Click action is perfomred on Log Out link");
 

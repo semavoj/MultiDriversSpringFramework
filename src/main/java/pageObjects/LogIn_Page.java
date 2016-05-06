@@ -8,34 +8,61 @@ import utility.Log;
 /**
  * Created by Marinko on 2016-05-02.
  */
-public class LogIn_Page {
+public class LogIn_Page extends BaseClass {
 
     public static WebElement element = null;
 
-    public static WebElement txtbx_UserName(WebDriver driver){
+    public LogIn_Page(WebDriver driver){
 
-        element = driver.findElement(By.id("log"));
+        super(driver);
 
-        Log.info("Username text box found");
+    }
 
+    public static WebElement txtbx_UserName() throws Exception{
+
+        try {
+            element = driver.findElement(By.id("log"));
+
+            Log.info("Username text box found");
+        } catch (Exception e){
+
+
+            Log.error("UserName text box is not found on the Login Page");
+
+            throw(e);
+        }
         return element;
     }
 
-    public static WebElement txtbx_Password(WebDriver driver){
+    public static WebElement txtbx_Password() throws Exception{
 
-        element = driver.findElement(By.id("pwd"));
+        try {
+            element = driver.findElement(By.id("pwd"));
 
-        Log.info("Submit button found");
+            Log.info("Submit button found");
+        } catch (Exception e){
 
+
+            Log.error("Password text box is not found on the Login Page");
+
+            throw (e);
+
+        }
         return element;
     }
 
-    public static WebElement btn_LogIn(WebDriver driver){
+    public static WebElement btn_LogIn() throws Exception{
 
-        element = driver.findElement(By.id("login"));
+        try {
+            element = driver.findElement(By.id("login"));
 
-        Log.info("Submit button found");
+            Log.info("Submit button found");
+        } catch (Exception e){
 
+            Log.error("Submit button is not found on the Login Page");
+
+            throw(e);
+        }
         return element;
     }
 }

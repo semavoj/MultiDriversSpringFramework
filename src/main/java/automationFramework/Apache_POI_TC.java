@@ -30,12 +30,12 @@ public class Apache_POI_TC {
 
         driver.get(Constant.URL);
 
-        SignIn_Action.Execute(driver);
+        SignIn_Action.Execute();
 
         logger.info("Login Successfully, now it is the time to Log Off buddy.");
         //System.out.println("Login Successfully, now it is the time to Log Off buddy.");
 
-        Home_Page.lnk_LogOut(driver).click();
+        Home_Page.lnk_LogOut().click();
 
         driver.quit();
 

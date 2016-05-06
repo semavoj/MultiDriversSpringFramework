@@ -23,11 +23,11 @@ public class Param_TC {
 
         // Use page Object library now
 
-        SignIn_Action.Execute(driver, "testuser_1", "Test@123");
+        SignIn_Action.Execute( "testuser_1", "Test@123");
 
         System.out.println(" Login Successfully, now it is the time to Log Off buddy.");
 
-        Home_Page.lnk_LogOut(driver).click();
+        Home_Page.lnk_LogOut().click();
 
         driver.quit();
     }

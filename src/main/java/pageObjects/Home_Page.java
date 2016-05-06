@@ -8,14 +8,23 @@ import utility.Utils;
 /**
  * Created by Marinko on 2016-05-02.
  */
-public class Home_Page {
+public class Home_Page extends BaseClass{
+
     public static WebElement element = null;
 
-    public static WebElement lnk_SignIn(WebDriver driver) throws Exception {
+
+    public Home_Page(WebDriver driver){
+
+        super(driver);
+
+    }
+
+    public static WebElement lnk_SignIn() throws Exception {
 
         try {
 
-            element = Utils.fluentWait(driver, By.id("account"));
+            element = driver.findElement(By.id("account"));
+            //element = Utils.fluentWait(driver, By.id("account"));
 
         } catch (NotFoundException nfe){
 
@@ -35,12 +44,13 @@ public class Home_Page {
         return element;
     }
 
-    public static WebElement lnk_MyAccount(WebDriver driver) throws Exception {
+    public static WebElement lnk_MyAccount() throws Exception {
 
         try {
 
-            element = Utils.fluentWait(driver, By.id("accounts"));
-            element.click();
+            element = driver.findElement(By.id("account"));
+            //element = Utils.fluentWait(driver, By.id("accounts"));
+            //element.click();
 
         } catch (NotFoundException nfe){
 
@@ -60,10 +70,12 @@ public class Home_Page {
         return element;
     }
 
-    public static WebElement lnk_LogOut(WebDriver driver) throws Exception{
+    public static WebElement lnk_LogOut() throws Exception{
 
         try {
-            element = Utils.fluentWait(driver, By.id("account_logout"));
+
+            element = driver.findElement(By.id("account_logout"));
+            //element = Utils.fluentWait(driver, By.id("account_logout"));
             //driver.findElement(By.id("account_logout"));
 
         } catch (NotFoundException nfe)
@@ -81,5 +93,93 @@ public class Home_Page {
         Log.info("Log Out link element found");
 
         return element;
+    }
+
+    public static class TopNavigation {
+
+        public static class Product_Type {
+
+            static WebElement mainElement;
+
+            public static void Accessories() throws Exception {
+
+                try {
+
+                    mainElement = driver.findElement(By.linkText("Product Category"));
+
+                    Log.info("Product category link is found under Top Navigation");
+
+                    Utils.mouseHoverAction(mainElement, "Accessories");
+
+                } catch (Exception e) {
+
+                    Log.error("Accessories link is not found under Product Category");
+
+                    throw (e);
+
+                }
+
+            }
+
+            public static void iMacs() throws Exception {
+
+                try {
+
+                    mainElement = driver.findElement(By.linkText("Product Category"));
+
+                    Log.info("Product category link is found under Top Navigation");
+
+                    Utils.mouseHoverAction(mainElement, "iMacs");
+
+                } catch (Exception e) {
+
+                    Log.error("Accessories link is not found under Product Category");
+
+                    throw (e);
+
+                }
+
+            }
+
+            public static void iPads() throws Exception {
+
+                try {
+
+                    mainElement = driver.findElement(By.linkText("Product Category"));
+
+                    Log.info("Product category link is found under Top Navigation");
+
+                    Utils.mouseHoverAction(mainElement, "iPads");
+
+                } catch (Exception e) {
+
+                    Log.error("Accessories link is not found under Product Category");
+
+                    throw (e);
+
+                }
+
+            }
+
+            public static void iPhones() throws Exception {
+
+                try {
+
+                    mainElement = driver.findElement(By.linkText("Product Category"));
+
+                    Log.info("Product category link is found under Top Navigation");
+
+                    Utils.mouseHoverAction(mainElement, "iPhones");
+
+                } catch (Exception e) {
+
+                    Log.error("Accessories link is not found under Product Category");
+
+                    throw (e);
+
+                }
+
+            }
+        }
     }
 }

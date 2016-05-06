@@ -38,11 +38,11 @@ public class Log4j_Logging_TC {
 
         Log.info("Web application launched");
 
-        SignIn_Action.Execute(driver);
+        SignIn_Action.Execute();
 
         System.out.println("Login Successfully, now it is the time to Log Off buddy.");
 
-        Home_Page.lnk_LogOut(driver).click();
+        Home_Page.lnk_LogOut().click();
 
         Log.info("Click action is perfomred on Log Out link");
 

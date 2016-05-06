@@ -53,6 +53,9 @@ public class ExcelUtils {
     }
 
     //This method is to write in the Excel cell, Row num and Col num are the parameters
+
+    @SuppressWarnings("static-access")
+
     public static void setCellData(String Result, int RowNum, int ColNum) throws Exception{
         try {
 
@@ -96,5 +99,27 @@ public class ExcelUtils {
             Log.error("Class ExcelUtil | Method getRowContains | Exception desc : " + e.getMessage());
             throw(e);
         }
+    }
+
+    public static int getRowUsed() throws Exception {
+
+        try{
+
+            int RowCount = ExcelWSheet.getLastRowNum();
+
+            Log.info("Total number of Row used return as &lt; " + RowCount + " &gt;.");
+
+            return RowCount;
+
+        }catch (Exception e){
+
+            Log.error("Class ExcelUtil | Method getRowUsed | Exception desc : "+e.getMessage());
+
+            System.out.println(e.getMessage());
+
+            throw (e);
+
+        }
+
     }
 }

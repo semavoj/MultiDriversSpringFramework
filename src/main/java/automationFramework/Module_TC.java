@@ -23,7 +23,7 @@ public class Module_TC {
         // Use page Object library now
 
         try {
-            SignIn_Action.Execute(driver);
+            SignIn_Action.Execute();
 
         } catch (Exception e)
         {
@@ -33,7 +33,7 @@ public class Module_TC {
 
         try {
 
-            Home_Page.lnk_LogOut(driver).click();
+            Home_Page.lnk_LogOut().click();
 
         } catch (Exception e){
             System.out.println("Log_out error");
