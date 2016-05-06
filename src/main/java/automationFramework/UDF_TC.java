@@ -60,6 +60,7 @@ public class UDF_TC{
 
     public void afterMethod() {
 
+        //Quit and close
         driver.quit();
 
     }
