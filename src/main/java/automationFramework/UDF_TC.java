@@ -6,6 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pageObjects.Home_Page;
+import pageObjects.ProductListing_Page;
 import utility.Constant;
 import utility.ExcelUtils;
 import utility.Log;
@@ -46,6 +47,8 @@ public class UDF_TC{
         SignIn_Action.Execute(driver, Constant.Username, Constant.Password);
 
         System.out.println("Login Successfully, now it is the time to Log Off buddy.");
+
+        //ProductListing_Page.Product_1.img_Product(driver).click();
 
         Home_Page.lnk_LogOut(driver).click();
 
