@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SeleniumAutomationFramework.iml" filepath="$PROJECT_DIR$/SeleniumAutomationFramework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GitTest.iml" filepath="$PROJECT_DIR$/GitTest.iml" />
     </modules>
   </component>
 </project>
