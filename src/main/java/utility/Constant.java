@@ -15,6 +15,8 @@ public class Constant {
 
     public static final String File_TestData = "TestData.xlsx";
 
+    public static final String SheetName = "Blad1";
+
     //Test Data Sheet Columns
 
     public static final int Col_TestCaseName = 0;

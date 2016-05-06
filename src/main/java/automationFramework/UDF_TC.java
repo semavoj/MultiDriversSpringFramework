@@ -35,7 +35,7 @@ public class UDF_TC{
 
         Log.startTestCase(sTestCaseName);
 
-        ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,"Blad1");
+        ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,Constant.SheetName);
 
         iTestCaseRow = ExcelUtils.getRowContains(sTestCaseName,Constant.Col_TestCaseName);
 
