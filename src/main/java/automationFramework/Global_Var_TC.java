@@ -10,6 +10,8 @@ import org.apache.log4j.Logger;
 // Import package utility.*
 
 import utility.Constant;
+import utility.Log;
+
 /**
  * Created by Marinko on 2016-05-02.
  */
@@ -31,12 +33,19 @@ public class Global_Var_TC {
 
         // Pass Constant Variables as arguments to Execute method
 
-        SignIn_Action.Execute(driver,Constant.Username,Constant.Password);
-
+        try {
+            SignIn_Action.Execute(driver, Constant.Username, Constant.Password);
+        } catch (Exception e){
+            Log.error("");
+        }
         logger.info("Login Successfully, now it is the time to Log Off buddy.");
         //System.out.println("Login Successfully, now it is the time to Log Off buddy.");
 
-        Home_Page.lnk_LogOut(driver).click();
+        try {
+            Home_Page.lnk_LogOut(driver).click();
+        } catch (Exception e){
+            Log.error("");
+        }
 
         driver.quit();
 

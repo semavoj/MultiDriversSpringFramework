@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class Param_TC {
     public static WebDriver driver = null;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
 
         driver = new FirefoxDriver();
 

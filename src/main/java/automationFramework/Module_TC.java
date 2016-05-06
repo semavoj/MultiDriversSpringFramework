@@ -31,8 +31,13 @@ public class Module_TC {
         }
         System.out.println(" Login Successfully, now it is the time to Log Off buddy.");
 
-        Home_Page.lnk_LogOut(driver).click();
+        try {
 
+            Home_Page.lnk_LogOut(driver).click();
+
+        } catch (Exception e){
+            System.out.println("Log_out error");
+        }
         driver.quit();
     }
 }

@@ -11,7 +11,7 @@ import utility.Log;
  */
 public class SignIn_Action {
 
-    public static void Execute(WebDriver driver, String sUsername, String sPassword){
+    public static void Execute(WebDriver driver, String sUsername, String sPassword) throws Exception{
 
         Home_Page.lnk_SignIn(driver).click();
 
