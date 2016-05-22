@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AutomationFrameworkLab.iml" filepath="$PROJECT_DIR$/AutomationFrameworkLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework-core/framework-core.iml" filepath="$PROJECT_DIR$/framework-core/framework-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework-shared-resources/framework-shared-resources.iml" filepath="$PROJECT_DIR$/framework-shared-resources/framework-shared-resources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-suits/test-suits.iml" filepath="$PROJECT_DIR$/test-suits/test-suits.iml" />
     </modules>
   </component>
 </project>

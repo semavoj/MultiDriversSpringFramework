@@ -22,16 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="framework-core" />
         <module name="framework-shared-resources" />
-        <module name="GitTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="AutomationFrameworkLab" target="1.5" />
-      <module name="framework-core" target="1.5" />
       <module name="framework-shared-resources" target="1.5" />
-      <module name="GitTest" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
