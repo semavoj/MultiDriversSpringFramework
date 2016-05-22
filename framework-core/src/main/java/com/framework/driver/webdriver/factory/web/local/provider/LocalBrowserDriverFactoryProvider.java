@@ -3,6 +3,7 @@ package com.framework.driver.webdriver.factory.web.local.provider;
 import com.framework.driver.webdriver.browser.BrowserSettings;
 import com.framework.driver.webdriver.factory.web.local.LocalBrowserDriverFactory;
 import com.framework.driver.webdriver.factory.web.local.impl.ChromeDriverFactory;
+import com.framework.driver.webdriver.factory.web.local.impl.FirefoxDriverFactory;
 
 /**
  * Created by Marinko on 2016-05-21.
@@ -15,7 +16,7 @@ public class LocalBrowserDriverFactoryProvider {
 
         switch (browser) {
             case FIREFOX:
-                //factory = new FirefoxDriverFactory();
+                factory = new FirefoxDriverFactory();
                 break;
             case SAFARI:
                 break;

@@ -15,9 +15,9 @@ public abstract class LocalBrowserDriverFactory {
 
     public abstract WebDriver createDriver(WebDriverProperties driverProperties) throws Exception;
 
-    /*
+
     protected static void cannotEmulateMobile(String browser) throws Exception {
-        Assert.assertTrue("Mobile emulation not supported on " + browser, !TestContext.isMobileChannel());
+        ///Assert.assertTrue("Mobile emulation not supported on " + browser, !TestContext.isMobileChannel());
     }
-    */
+
 }
